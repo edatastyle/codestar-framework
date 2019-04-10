@@ -37,6 +37,9 @@
  * ------------------------------------------------------------------------------------------------
  *
  */
+if(!function_exists('wp_get_current_user')) {
+    include(ABSPATH . "wp-includes/pluggable.php"); 
+}
 
 // ------------------------------------------------------------------------------------------------
 require_once plugin_dir_path( __FILE__ ) .'/cs-framework-path.php';
